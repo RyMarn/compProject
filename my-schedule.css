@@ -50,12 +50,39 @@ header{
     border-radius: 8px;
     margin-left: 6px;
     width: 123px;
-    height: 33px;
+    height: 28px;
     font-weight: 600;
     font-size: 15px;
     transition: all ease 0.30s;
+    color: black;
+
 }
 
+.backbtn{
+    cursor: pointer;
+    text-align: center;
+    background: var(--green);
+    border-radius: 8px;
+    margin-left: 6px;
+    width: 123px;
+    height: 28px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all ease 0.30s;
+    text-decoration: none;
+}
+
+.backbtn a{
+    color: black;
+}
+
+.backbtn:hover{
+    background-color: var(--green-dark);
+}
+
+.clearSchedule:hover{
+    background-color: var(--green-dark);
+}
 
 
 .navbar{
