@@ -71,6 +71,114 @@
     background-image: linear-gradient(rgba(0,8,51,0.9)),url(images);
 }
 
+.node {
+
+  font-size: 2em;
+  display: block; 
+  float: left;
+  width: 200px ;
+  height: 60px;
+  border-radius: 5px;
+  background-color: rgb(228, 198, 198);
+  padding-top: 15px;
+ 
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 40px;
+}
+
+
+.line{
+  z-index: -1;
+  position:absolute;
+  width:4px;
+  margin-top:-1px;
+  background-color:red;
+}
+ 
+
+#node1240
+{
+  margin-top: 100px;
+  margin-left: 200px;
+
+}
+
+#node1010
+{
+
+  margin-top: 100px;
+  margin-left: 43px;
+  
+}
+
+#node1300
+{
+ 
+  margin-top: 100px;
+  margin-left: 33px;
+  
+}
+
+#node1500
+{
+ 
+  margin-top: 100px;
+  margin-left: 43px;
+  
+  
+}
+
+
+#node1020
+{
+ 
+  clear: left;
+  margin-top: 100px;
+  margin-left: 333px;
+  
+}
+
+#node1700
+{
+ 
+
+  margin-top: 100px;
+  margin-left: 83px;
+  
+}
+
+
+#node2160
+{
+ 
+  clear: left;
+  margin-top: 100px;
+  margin-left: 263px;
+  
+}
+
+#node3460
+{
+ 
+  clear: left;
+  margin-top: 100px;
+  margin-left: 193px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .search-bar{
     width: 300px;
     height: 44px;
@@ -95,7 +203,7 @@
  }
 
  body{
-  background-image: url("Background.jpg");
+  
   background-repeat: no-repeat;
   background-size: cover;
   
