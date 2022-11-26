@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="searchcss.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+
+
+</head>
+<body onkeydown="if (event.keyCode == 13)
+document.getElementById('submit-btn').click()" >
+    <header>
+
+        <a href="index.html" class="logo" id="logo">Know Your Major</a>
+        <div class="menu-items">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+            </ul>
+            <div class="sign-in">
+                <a href="sign-in.html"> 
+                <button class="sign-in-button" >Sign In</button></a>
+            </a>
+            </div>
+        </div>
+
+</header>
+        <h1 class="start-msg" id="start-msg">
+            START KNOWING MORE ABOUT YOUR <span class="orange">FUTURE</span>
+        </h1>
+            <input type="text" placeholder="Enter Your Major" onclick="showFakeDiv()" class="major-text" id ="major-text">
+            <div></div>
+            <div></div>
+                <button  id="submit-btn" class="submit"  onclick="checksearch('major-text','map.html')">Submit</button>
+                <div id="result" onclick="changeInputBar() , hideFakeDiv()">
+                <ul>
+                    <li>Computer Science</li>
+                    <li>Computer Science</li>
+                    <li>Computer Science</li>
+                    <li>Computer Science</li>
+                    <li>Computer Science</li>
+                    <li>Computer Science</li>
+                    <li>Computer Science</li>
+                    <li>Computer Science</li>
+                    <li>Computer Science</li>
+                    <li>Computer Science</li>
+                    <li>Computer Science</li>                    
+                </ul>
+
+                </div>
+
+
+
+    
+</body>
+<script src="autocomplete.js"></script>
+<script src="map.js"></script>
+
+
+
+</html>

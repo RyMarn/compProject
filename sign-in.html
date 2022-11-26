@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign.css"/>
+    <title>Sign In</title>
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+        </script>
+</head>
+<body onkeydown="if (event.keyCode == 13)
+                 document.getElementById('login-btn').click()">
+
+    <body>
+        <header>
+
+            <a href="index.html" class="logo" id="logo">Know Your Major</a>
+            <div class="menu-items">
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+                <div class="sign-in">
+                    <button class="sign-in-button">Sign In</button></a>
+                </div>
+            </div>
+    
+    </header>
+
+        <main class="main">
+            <h1 class="sign-in">
+                Sign In
+            </h1>
+                <div class="user-div">
+                 <p class="user-name">Username</p>
+                </div>
+                 <input type="text" class="user-text" id ="user-nameE" onkeydown="if (event.keyCode == 13)
+                 document.getElementById('login-btn').click()" placeholder="User name">
+                    <div class="pass">
+                        <p class="password">Password</p>
+                    </div>
+
+
+                 <input type="password" class="password-text" id ="passwordE" onkeydown="if (event.keyCode == 13)
+                 document.getElementById('login-btn').click()" placeholder="Password" >
+                 <div></div>
+              
+                    <button id="login-btn" class="login" onclick="checkUserAndPass('user-nameE','passwordE' ,'search-signed.html')">
+                        Login
+                    </button>
+        </main>
+    
+</body>
+<script src="map.js"></script>
+
+</html>

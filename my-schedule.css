@@ -1,0 +1,314 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --green: #00DF9A;
+    --white: #FFFFFF;
+    --black: #000000;
+    --green-dark: #2c8b6d;
+    --orange: #F5470F;
+    --cyan: #1DBEC8;
+    --dark-blue:#23868d;
+
+}
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    background-color: var(--black);
+}
+
+
+header{
+    position: relative;
+    top:0;
+    right: 0;
+    width: 100%;
+    background: #000000;
+    box-shadow: 0 2px 4px 0 rgba(0, 223, 154, 0.2);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+
+.clearSchedule
+{
+    cursor: pointer;
+    text-align: center;
+    background: var(--green);
+    border-radius: 8px;
+    margin-left: 6px;
+    width: 123px;
+    height: 33px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all ease 0.30s;
+}
+
+
+
+.navbar{
+    display: flex;
+}
+.navbar a {
+    padding: 10px 20px;
+}
+
+
+.logo{
+font-family: 'Chakra Petch';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+color: var(--white);
+text-decoration: none;
+transition: all ease 0.30s;
+}
+.logo:hover{
+    color: var(--green);
+}
+
+header .menu-items{
+    display: flex;
+    gap: 40px;
+}
+
+header .menu-items a{
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+color: var(--white);
+text-decoration: none;
+transition: all ease 0.30s;
+}
+
+header .menu-items a:hover{
+    color: var(--green);
+    text-decoration: underline;
+
+}
+
+.sign-in-button{
+cursor: pointer;
+background: var(--green);
+border-radius: 12px;
+width: 193px;
+height: 33px;
+font-weight: 600;
+font-size: 18px;
+transition: all ease 0.30s;
+}
+
+.sign-in-button:hover{
+    background-color: var(--green-dark);
+}
+.home h1{
+    color: white;
+}
+
+.my-schedule , .fall-2022{
+    padding-top:15px;
+    color: white;
+    text-align: center;
+}
+
+.fall-2022{
+    padding-bottom: 20px;
+}
+
+.schedule tr{
+    color: white;
+    text-align: center  ;
+}
+
+html, body {
+    margin: 0;
+    font-family: 'Karla';
+    color: #546e7a;
+}
+* {
+    box-sizing: border-box;
+}
+
+.timetable {
+    display: grid;
+    grid-template-areas: ". week" "time content";
+    grid-template-columns: 120px;
+    grid-template-rows: 60px;
+    width: 100vw;
+    height: 100vh;
+}
+.timetable .accent-pink-gradient {
+    margin: center;
+    font-size: 30px;
+    padding-top: 20%;
+    padding-left: 10%;
+    font-weight: 700;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--green), #eea08e);
+    transition: 0.2s ease box-shadow, 0.2s ease transform;
+    
+}
+.timetable .accent-pink-gradient:hover {
+    box-shadow: 0 20px 30px 0 rgba(238, 142, 188, 0.3);
+    transform: scale(1.05);
+}
+
+.accent-red-gradient:hover {
+    box-shadow: 0 20px 30px 0 rgba(238, 142, 188, 0.3);
+    transform: scale(1.05);
+
+}
+
+.accent-red-gradient 
+{
+    margin: center;
+    font-size: 30px;
+    padding-top: 20%;
+    padding-left: 10%;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #8eeec0, #dcee8e);
+    transition: 0.2s ease box-shadow, 0.2s ease transform;
+
+}
+
+.timetable .accent-orange-gradient {
+    margin: center;
+    font-size: 30px;
+    padding-top: 20%;
+    padding-left: 10%;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #8eeec0, #dcee8e);
+    transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+.timetable .accent-orange-gradient:hover {
+    box-shadow: 0 20px 30px 0 rgba(238, 192, 142, 0.3);
+    transform: scale(1.05);
+}
+.timetable .accent-green-gradient {
+    margin: center;
+    font-size: 30px;
+    padding-top: 20%;
+    padding-left: 10%;
+    font-weight: 700;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #8eeec0, #8eeea0);
+    transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+.timetable .accent-green-gradient:hover {
+    box-shadow: 0 20px 30px 0 rgba(188, 238, 142, 0.3);
+    transform: scale(1.05);
+}
+.timetable .accent-cyan-gradient {
+    margin: center;
+    font-size: 30px;
+    padding-top: 20%;
+    padding-left: 10%;
+    font-weight: 700;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #8eeec0, #8edcee);
+    transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+.timetable .accent-cyan-gradient:hover {
+    box-shadow: 0 20px 30px 0 rgba(142, 238, 192, 0.3);
+    transform: scale(1.05);
+}
+.timetable .accent-blue-gradient {
+    margin: center;
+    font-size: 30px;
+    padding-top: 20%;
+    padding-left: 10%;
+    font-weight: 700;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #8eeec0, #a08eee);
+    transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+.timetable .accent-blue-gradient:hover {
+    box-shadow: 0 20px 30px 0 rgba(142, 188, 238, 0.3);
+    transform: scale(1.05);
+}
+.timetable .accent-purple-gradient {
+    margin: center;
+    font-size: 30px;
+    padding-top: 20%;
+    padding-left: 10%;
+    font-weight: 700;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #8eeec0, #ee8edc);
+    transition: 0.2s ease box-shadow, 0.2s ease transform;
+}
+.timetable .accent-purple-gradient:hover {
+    box-shadow: 0 20px 30px 0 rgba(192, 142, 238, 0.3);
+    transform: scale(1.05);
+}
+.timetable .weekend {
+    background: #fbfbfc;
+    color: #87a1ad;
+}
+.timetable .week-names {
+    grid-area: week;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.timetable .week-names > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 1px 0 0 #eceff1;
+}
+.timetable .time-interval {
+    grid-area: time;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    font-size: 14px;
+}
+.timetable .time-interval > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 1px 0 0 #eceff1;
+}
+.timetable .content {
+    grid-area: content;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+}
+.timetable .content > div {
+    box-shadow: inset 1px 0 0 #eceff1, inset 0 1px 0 0 #eceff1;
+}

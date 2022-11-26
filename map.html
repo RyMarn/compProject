@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="map.css"/>
+    <title>Computer Science</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+            integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" 
+            crossorigin="anonymous">
+    </script>
+
+</head>
+<script type="text/javascript">
+    
+    function moveDivs(event)
+    {
+        x=event.pageX;
+        y=event.pageY;
+        
+        document.getElementById("course-info").style.left=x+"px";
+        document.getElementById("course-info").style.top=y+"px";
+    }
+    functio
+    {
+        document.getElementById("course-info").style.visibility = "visible";
+    }
+
+    function hideShown()
+    {
+        document.getElementById("course-info").style.visibility = "hidden";
+
+    }
+
+    function changeText()
+    {
+        var element = document.getElementById("schedule-btn");
+        if(element.innerHTML =="Add To Schedule")
+        element.innerHTML = "Remove from Schedule";
+        else
+        element.innerHTML = "Add To Schedule";
+    }
+
+    function changeCourseInfo(text)
+    {
+        var courseTxt = document.getElementById("course-info-txt");
+
+        courseTxt.innerHTML = text;
+    }
+    
+    </script>
+<body >
+    <header>
+
+        <a href="index.html" class="logo" id="logo">Know Your Major</a>
+        <div class="menu-items">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <div class="sign-in">
+                <a href="sign-in.html">
+                <button class="sign-in-button">Sign In</button></a>
+            </div>
+        </div>
+
+</header>
+
+
+    <main class="main">
+
+        <h1 class="cs">
+            Computer Science
+        </h1>
+        <hr class="white-line">
+
+
+        <p class="csinfo">
+            <span style="text-align:center ;">Major Description:</span><br><br>
+            The computer science major program is a 120-credit hour degree program in the Faculty of Science that provides a solid background for a career in computer science. 
+Major students are eligible for the co-op program and specialization areas.To enter the program students must have completed 24 credit hours with a minimum 2.0 GPA
+ a minimum grade of C+ in COMP 1020, a C+ in both MATH 1300 and MATH 1500 as well as a C in MATH 1700.A minimum GPA of 2.0 must be maintained to remain in the program.
+
+        </p>
+        <hr>
+
+        <p class="how-to-use">
+            <span class="green">CHECK</span> each completed course to know what courses after you can take!<br>
+            <span class="green">DOUBLE CLICK</span> on each course to know more information about it!
+        </p>
+        <h1 class="years-text">First Year</h1>
+        <div class="years">
+            <div class="node" id="comp1010" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 1010') ">
+                <input type="checkbox" id="check1010"  >
+                COMP 1010
+            </div>
+    
+            <div class="node" id="math1500" ondblclick="moveDivs(event)  ; changeCourseInfo('MATH 1500')  ">
+                <input type="checkbox" id="checkmath1500" >
+                MATH 1500
+            </div>
+
+            <div class="node" id="math1300" ondblclick="moveDivs(event)  ; changeCourseInfo('MATH 1300') ">
+                <input type="checkbox" id="checkmath1300" >
+                MATH 1300
+            </div>
+
+            <div class="node" id="econ1010" ondblclick="moveDivs(event)   ; changeCourseInfo('ECON 1010') ">
+                <input type="checkbox" id="checkarts1110" >
+                ECON 1010
+            </div>
+
+            <div class="node" id="stat1000" ondblclick="moveDivs(event)  ; changeCourseInfo('STAT 1000')  ">
+                <input type="checkbox" id="checkstat1000" >
+                STAT 1000
+            </div>
+
+
+        </div>
+
+
+        <div class="years">
+            <div class="node" id="comp1020" ondblclick="moveDivs(event)   ; changeCourseInfo('COMP 1020') ">
+                <input type="checkbox" >
+                COMP 1020
+            </div>
+            <div class="node" id="math1700" ondblclick="moveDivs(event)   ; changeCourseInfo('MATH 1700') ">
+                <input type="checkbox" >
+                MATH 1700
+            </div> 
+
+            <div class="node" id="comp1500" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 1500') ">
+                <input type="checkbox" >
+                COMP 1500
+            </div>
+           
+
+            <div class="node" id="econ1020" ondblclick="moveDivs(event)  ; changeCourseInfo('ECON 1020')  ">
+                <input type="checkbox" >
+                ECON 1020
+            </div> 
+            <div class="node" id="stat2000" ondblclick="moveDivs(event)  ; changeCourseInfo('STAT 2000')  ">
+                <input type="checkbox" >
+                STAT 2000
+            </div> 
+
+             
+        </div>
+        <hr>
+        <h1 class="years-text">Second Year</h1>
+        
+
+
+        <!-- Second year-->
+        <div class="years">
+            <div class="node" id="comp2140" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 2140')  ">
+                <input type="checkbox" >
+                COMP 2140
+            </div>
+            <div class="node" id="comp2160" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 2160')  ">
+                <input type="checkbox" >
+                COMP 2160
+            </div> 
+
+            <div class="node" id="math1240" ondblclick="moveDivs(event)   ; changeCourseInfo('MATH 1240') ">
+                <input type="checkbox" >
+                MATH 1240
+            </div>
+           
+
+            <div class="node" id="comp2000" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 2000')  ">
+                <input type="checkbox" >
+                COMP 2000
+            </div> 
+            <div class="node" id="math2000" ondblclick="moveDivs(event)  ; changeCourseInfo('MATH 2000')  ">
+                <input type="checkbox" >
+                MATH 2000
+            </div> 
+
+             
+        </div>
+
+
+        <div class="years">
+            <div class="node" id="comp2150" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 2150')  ">
+                <input type="checkbox" >
+                COMP 2150
+            </div>
+            <div class="node" id="comp2280" ondblclick="moveDivs(event)   ; changeCourseInfo('COMP 2280') ">
+                <input type="checkbox" >
+                COMP 2280
+            </div> 
+
+            <div class="node" id="comp2080" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 2080') ">
+                <input type="checkbox" >
+                COMP 2080
+            </div>
+           
+
+            <div class="node" id="comp2130" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 2130')  ">
+                <input type="checkbox" >
+                COMP 2130
+            </div> 
+            <div class="node" id="math2080" ondblclick="moveDivs(event)  ; changeCourseInfo('MATH 2080')  ">
+                <input type="checkbox" >
+                MATH 2080
+            </div> 
+
+             
+        </div>
+        <hr>
+        <h1 class="years-text">Third Year</h1>
+
+        <div class="years">
+            <div class="node" id="comp3000" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 3000') ">
+                <input type="checkbox" >
+                COMP 3000
+            </div>
+            <div class="node" id="comp3005" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 3000')">
+                <input type="checkbox" >
+                COMP 3000
+            </div> 
+
+            <div class="node" id="comp3006" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 3000') ">
+                <input type="checkbox" >
+                COMP 3000
+            </div>
+           
+
+            <div class="node" id="comp3007" ondblclick="moveDivs(event) ; changeCourseInfo('COMP 3000') ">
+                <input type="checkbox" >
+                COMP 3000
+            </div> 
+            <div class="node" id="comp3008" ondblclick="moveDivs(event) ; changeCourseInfo('COMP 3000') ">
+                <input type="checkbox" >
+                COMP 3000
+            </div> 
+
+             
+        </div>
+
+        <div class="years">
+            <div class="node" id="comp3009" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 3000')">
+                <input type="checkbox" >
+                COMP 3000
+            </div>
+            <div class="node" id="comp3001" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 3000')">
+                <input type="checkbox" >
+                COMP 3000
+            </div> 
+
+            <div class="node" id="comp3002" ondblclick="moveDivs(event) ; changeCourseInfo('COMP 3000') ">
+                <input type="checkbox" >
+                COMP 3000
+            </div>
+           
+
+            <div class="node" id="comp3003" ondblclick="moveDivs(event) ; changeCourseInfo('COMP 3000') ">
+                <input type="checkbox" >
+                COMP 3000
+            </div> 
+            <div class="node" id="comp3004" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 3000')">
+                <input type="checkbox" >
+                COMP 3000
+            </div> 
+
+             
+        </div>
+
+
+        <hr>
+        <h1 class="years-text">Fourth Year</h1>
+
+        <div class="years">
+            <div class="node" id="comp4000" ondblclick="moveDivs(event) ; changeCourseInfo('COMP 4000') ">
+                <input type="checkbox" >
+                COMP 4000
+            </div>
+            <div class="node" id="comp4001" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 4000') ">
+                <input type="checkbox" >
+                COMP 4000
+            </div> 
+
+            <div class="node" id="comp4002" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 4000') ">
+                <input type="checkbox" >
+                COMP 4000
+            </div>
+           
+
+            <div class="node" id="comp4003" ondblclick="moveDivs(event) ; changeCourseInfo('COMP 4000') ">
+                <input type="checkbox" >
+                COMP 4000
+            </div> 
+            <div class="node" id="comp4004" ondblclick="moveDivs(event)  ; changeCourseInfo('MATH 4000')">
+                <input type="checkbox" >
+                MATH 4000
+            </div> 
+
+             
+        </div>
+
+        <div class="years">
+            <div class="node" id="comp4005" ondblclick="moveDivs(event) ; changeCourseInfo('COMP 4000') ">
+                <input type="checkbox" >
+                COMP 4000
+            </div>
+            <div class="node" id="comp4006" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 4000')">
+                <input type="checkbox" >
+                COMP 4000
+            </div> 
+
+            <div class="node" id="comp4007" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 4000')">
+                <input type="checkbox" >
+                COMP 4000
+            </div>
+           
+
+            <div class="node" id="comp4008" ondblclick="moveDivs(event)  ; changeCourseInfo('COMP 4000')">
+                <input type="checkbox" >
+                COMP 4000
+            </div> 
+            <div class="node" id="comp4009" ondblclick="moveDivs(event) ; changeCourseInfo('MATH 4000') ">
+                <input type="checkbox" >
+                MATH 4000
+            </div> 
+
+             
+        </div>
+       
+        
+        
+        
+ 
+
+    </main>
+    <div class="course-info" id="course-info">
+        <a class="close" onclick="hideShown()">Close</a>
+        <h1 id ="course-info-txt">COURSE XXXX</h1>
+        <p>Introduction to a Computer Science.An introduction to computer programming using a procedural high level language. <span style="text-decoration: underline ;">Prerequisite: COMP 1010</span></p>
+        <p style="text-decoration: underline ;">Fall 2022: MWF 10:30 AM - 11:20 AM</p>
+    </div>
+
+
+</body>
+
+
+<script src="map.js"></script>
+
+
+
+
+
+
+</html>

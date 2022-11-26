@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --green: #00DF9A;
+    --white: #FFFFFF;
+    --black: #000000;
+    --green-dark: #2c8b6d;
+    --orange: #F5470F;
+    --cyan: #1DBEC8;
+    --dark-blue:#23868d;
+
+}
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    background-color: var(--black);
+}
+
+
+header{
+    position: relative;
+    top:0;
+    right: 0;
+    width: 100%;
+    background: #000000;
+    box-shadow: 0 2px 4px 0 rgba(0, 223, 154, 0.2);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+
+.navbar{
+    display: flex;
+}
+.navbar a {
+    padding: 10px 20px;
+}
+
+
+.logo{
+font-family: 'Chakra Petch';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+color: var(--white);
+text-decoration: none;
+transition: all ease 0.30s;
+}
+.logo:hover{
+    color: var(--green);
+}
+
+header .menu-items{
+    display: flex;
+    gap: 40px;
+}
+
+header .menu-items a{
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+color: var(--white);
+text-decoration: none;
+transition: all ease 0.30s;
+}
+
+header .menu-items a:hover{
+    color: var(--green);
+    text-decoration: underline;
+
+}
+
+.sign-in-button{
+cursor: pointer;
+background: var(--green);
+border-radius: 12px;
+width: 193px;
+height: 33px;
+font-weight: 600;
+font-size: 18px;
+transition: all ease 0.30s;
+}
+
+.sign-in-button:hover{
+    background-color: var(--green-dark);
+}
+
+.start-msg{
+    position: relative;
+    width: 50;
+    height: 44px;
+    margin-top: 100px;
+    margin-left: 300px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    
+    color: var(--white);
+}
+.orange{
+    color: var(--orange);
+}
+.major-text {
+    position: relative;
+    margin-top: 25px;
+    width: 800px;
+    height: 55px;
+    line-height: 44px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 300px;
+
+}
+
+.submit{
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+    height: 35px;
+    background-color: var(--cyan);
+    border-radius: 10px;
+    transition: all ease 0.30s;
+    font-weight: 700;
+    font-size: 100%;
+    margin-top: 15px;
+    margin-left: 650px;
+}
+.submit:hover{
+    background-color: var(--dark-blue);
+}
+
+#result  {
+    cursor: pointer;
+    position: fixed;
+    top: 330px;
+    left: 430px;
+    width: 500px;
+    transition: all ease 0.30s;
+    font-size: 100%;
+    background-color: white;
+    text-align: center;
+    visibility: hidden;
+
+}
+
+#result a{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    scroll-behavior: auto;
+}
+
+#result ul li {
+    padding: 5px 0;
+  }
+  #result ul li:hover {
+    background: #eee;
+  }
+
+
+
+
