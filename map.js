@@ -137,6 +137,49 @@ turnGreen();
 
 
 
+var courseDesc = [];
+courseDesc["sample"] = "This is default example of description for a course! In the real world more information would go here"
++ "  <p style='text-decoration: underline ;'>Fall 2022: MWF 10:30 AM - 11:20 AM</p> ";
+
+courseDesc["comp1010"] = "An introduction to computer science. Students will learn the basics of computer science and programming using a procedural high level language "
++ "  <p style='text-decoration: underline ;'>Fall 2022: MWF 10:30 AM - 11:20 AM</p> ";
+
+courseDesc["math1500"] = "A first Year calculus class. Teaches about derivatives, changing functions, riemann sums and slopes "
++ "  <p style='text-decoration: underline ;'>Fall 2022: MWF 10:30 AM - 11:20 AM</p> ";
+
+courseDesc["math1300"] = "Learn about linear algebra. Includes topics on matrixes, linear functions and transformations "
++ "  <p style='text-decoration: underline ;'>Fall 2022: MWF 10:30 AM - 11:20 AM</p> ";
+
+courseDesc["comp1020"] = "Introduction to recursive functions, Object oriented programing and some basic algorithms "
++ "  <p style='text-decoration: underline ;'>Fall 2022: MWF 10:30 AM - 11:20 AM</p> ";
+
+courseDesc["econ1010"] = "This is a sample elective course, that the student could pick from a drop down menu. Learn basic Econmics, including demand and supply curves! "
++ "  <p style='text-decoration: underline ;'>Fall 2022: MWF 10:30 AM - 11:20 AM</p> ";
+
+courseDesc["econ1020"] = "This is a sample elective course, that the student could pick from a drop down menu. Learn basic Econmics, including demand and supply curves! "
++ "  <p style='text-decoration: underline ;'>Fall 2022: MWF 10:30 AM - 11:20 AM</p> ";
+
+
+courseDesc["stat1000"] = "Learn the basics of modern statistics using the R-programing language. Includes topics like normal distribution and p-values"
++ "  <p style='text-decoration: underline ;'>Fall 2022: MWF 10:30 AM - 11:20 AM</p> ";
+
+courseDesc["math1700"] = "A second Year calculus class. Teaches about integrals, calcuting volumes, power rule and accumlation functions "
++ "  <p style='text-decoration: underline ;'>Fall 2022: MWF 10:30 AM - 11:20 AM</p> ";
+
+
+courseDesc["comp1500"] = "A computer class designed for engineering students. Uses python to teach object oriented topics in computer scince"
++ "  <p style='text-decoration: underline ;'>Fall 2022: MWF 10:30 AM - 11:20 AM</p> ";
+
+
+
+courseDesc["stat2000"] = "More advanced topics in statistics are covered in the course. Geared towards students pursuing more mathematically rich careers."
++ "  <p style='text-decoration: underline ;'>Fall 2022: MWF 10:30 AM - 11:20 AM</p> ";
+
+
+
+
+
+
 // EVERYTHING RELATD TO THE HIDDEN DIVS
 
 var currentCourseSelected;
@@ -145,27 +188,46 @@ var currentCourseSelected;
 //THE FUNCTION THAT RUNS WHEN YOU DOUBLE CLICK THE NODE
 function moveDivs(event)
     {
+
+
+        
+
         // THIS IS SO WE CAN TARGET WHAT COURSE TO ADD TO THE SCHEDULE IF THE ADD TO SCHEDULE BUTTON IS CLICKED
         var target = event.target || event.srcElement;
-        if ( checkReq(target.id))
+        if ( checkReq(target.id)) // WE WILl ONY SHOW THIS POP UP DIV IF IT'S PREREQUISTS ARE FULLfILLED
         {
+
+            // CHANGES COURSE DESCPRITON;
+            if ( courseDesc[target.id] !== undefined)
+            {
+                $("#course-info p").empty();
+                 $("#course-info p").first().html(courseDesc[target.id] );
+            }
+            else {
+                $("#course-info p").empty();
+                $("#course-info p").first().html( courseDesc["sample"] );
+            }
+
+      
+
     
         currentCourseSelected = target.id;
 
+
+        var screenWidth = $(window).width();
+     
         x=event.pageX;
         y=event.pageY;
+        if (x + 250 >  screenWidth)
+        {
+            x -= 250;
+        }
         
         document.getElementById("course-info").style.left=x+"px";
         document.getElementById("course-info").style.top=y+"px";
-
-        
-
-     
-
     
         showHidden();
-
-
+        
         }
     }
 
